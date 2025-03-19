@@ -61,8 +61,6 @@
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'act1/chapter1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -502,74 +500,6 @@ document.write(`
 </script>
 <p></p>
 <p></p>
-<p><strong>Option Pricing Neural Network Framework</strong></p>
-<ul>
-<li><p><strong><span class="math notranslate nohighlight">\( C_0 \)</span>: Initial Option Price (Price of an Option at <span class="math notranslate nohighlight">\( t = 0 \)</span>)</strong></p>
-<ul class="simple">
-<li><p><strong>Description</strong>: The initial option price reflects the market’s consensus valuation at contract inception. In a static financial model with perfect foresight, <span class="math notranslate nohighlight">\( C_0 \)</span> may appear as an absolute “truth”—an illusion of control akin to deterministic interpretations in Islamic finance. However, recognizing the stochastic nature of markets, <span class="math notranslate nohighlight">\( C_0 \)</span> serves merely as a provisional baseline. Over time, as new information emerges and conditions shift, this illusion dissipates, exposing the reality of risk and uncertainty.</p></li>
-</ul>
-</li>
-<li><p><strong><span class="math notranslate nohighlight">\( X \)</span>: Exercise Price (Strike Price of a European Option)</strong></p>
-<ul class="simple">
-<li><p><strong>Description</strong>: The strike price establishes the threshold for potential payoffs, defining whether the option will yield profit at expiration. If <span class="math notranslate nohighlight">\( S_T &gt; X \)</span>, the holder benefits from the intrinsic value; otherwise, the option expires worthless. <span class="math notranslate nohighlight">\( X \)</span> is thus a crucial parameter shaping the risk-reward profile of an option contract.</p></li>
-</ul>
-</li>
-<li><p><strong><span class="math notranslate nohighlight">\( S_t \)</span>: Spot Price of the Underlying Asset at Time <span class="math notranslate nohighlight">\( t \)</span></strong></p>
-<ul class="simple">
-<li><p><strong>Description</strong>: The spot price represents real-time market valuation, reflecting macroeconomic forces, investor sentiment, and microstructural dynamics. As a stochastic variable, <span class="math notranslate nohighlight">\( S_t \)</span> continuously evolves, making it the primary driver of an option’s valuation.</p></li>
-</ul>
-</li>
-<li><p><strong><span class="math notranslate nohighlight">\( M \)</span>: Monte Carlo Simulation</strong></p>
-<ul class="simple">
-<li><p><strong>Description</strong>: Monte Carlo methods provide a robust computational approach to modeling the probabilistic evolution of asset prices. By simulating numerous price paths under specific assumptions (e.g., geometric Brownian motion), Monte Carlo analysis enhances understanding of risk and expected payoffs, especially when closed-form solutions are infeasible. It bridges theoretical modeling and practical forecasting.</p></li>
-</ul>
-</li>
-<li><p><strong><span class="math notranslate nohighlight">\( P \)</span>: Payoff Function</strong></p>
-<ul>
-<li><p><strong>Description</strong>: The payoff function formalizes the option’s final outcome at expiration. For a European call option:</p>
-<div class="math notranslate nohighlight">
-\[
-    P = \max(S_T - X, 0)
-    \]</div>
-<p>where <span class="math notranslate nohighlight">\( S_T \)</span> is the spot price at expiration. This function encapsulates the asymmetry of options: unlimited potential gains (<span class="math notranslate nohighlight">\( S_T &gt; X \)</span>) versus limited downside (maximum loss capped at the premium paid). Option holders aim to maximize expected payoff through strategic positioning and risk management.</p>
-</li>
-</ul>
-</li>
-</ul>
-<hr class="docutils" />
-<p><strong>Islamic Finance Counterfactual Alignment</strong></p>
-<div class="pst-scrollable-table-container"><table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Parameter</p></th>
-<th class="head"><p>Western Finance Interpretation</p></th>
-<th class="head"><p>Islamic Finance Alignment</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\( C_0 \)</span> - Passive/Truth</p></td>
-<td><p><em>Riba</em> (ربا) - Interest Rate</p></td>
-<td><p>Rejects <em>riba</em>; <span class="math notranslate nohighlight">\( C_0 \)</span> should reflect real economic value, not interest-based discounting.</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\( X \)</span> - Critical/Speculative</p></td>
-<td><p><em>Gharar</em> (غرر) - Speculation</p></td>
-<td><p>Limits <em>gharar</em>; permissible speculation must be bounded within ethical risk-taking.</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\( S_t \)</span> - Agentic/Empirical</p></td>
-<td><p><em>Istithmar Akhlaqi</em> (استثمار أخلاقي) - Moral Investment</p></td>
-<td><p>Ensures underlying assets comply with <em>halal</em> investment principles.</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\( M \)</span> - Dramatic/Labyrinthine</p></td>
-<td><p><em>Musharakah vs. Mudarabah vs. Ribh-Khasara</em> (مشاركة vs مضاربة vs ربح-خسارة)</p></td>
-<td><p>Encourages shared risk-reward models over zero-sum speculation.</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\( P \)</span> - Absurd/Optimize</p></td>
-<td><p><em>Ukhuwah</em> (أخوة) - Brotherhood</p></td>
-<td><p>Optimizes for collective welfare rather than individual profit maximization.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>Islamic Finance Considerations</strong></p>
 <style>
 .float-right {
     float: right;
@@ -592,25 +522,7 @@ document.write(`
 <div class="float-right">
     <img src="../figures/procuito.jpeg" alt="Eco-Green QR Code" width="100%">
     <p>Yes, to smell pork, to eat of the habitation which your prophet, the Nazarite, conjured the devil into. I will buy with you, sell with you, talk with you, walk with you, and so following; but I will not eat with you, drink with you, nor pray with you. Shylock</p>
-</div><ul class="simple">
-<li><p><strong><span class="math notranslate nohighlight">\( C_0 \)</span> &amp; <em>Riba</em></strong>: Islamic finance does not allow interest-based discounting (e.g., risk-free rate <span class="math notranslate nohighlight">\( r \)</span>). Instead, <span class="math notranslate nohighlight">\( C_0 \)</span> would be derived from a fair valuation model aligned with real economic activity.</p></li>
-<li><p><strong><span class="math notranslate nohighlight">\( X \)</span> &amp; <em>Gharar</em></strong>: Excessive uncertainty is prohibited. While Islamic finance permits structured options (<em>arbun</em>), they must adhere to transparency and ethical risk constraints.</p></li>
-<li><p><strong><span class="math notranslate nohighlight">\( S_t \)</span> &amp; <em>Istithmar Akhlaqi</em></strong>: The underlying asset must be Sharia-compliant, ensuring that financial instruments avoid morally impermissible sectors.</p></li>
-<li><p><strong><span class="math notranslate nohighlight">\( M \)</span> &amp; <em>Musharakah/Mudarabah/Ribh-Khasara</em></strong>: Monte Carlo’s role can be reframed as a tool for equitable profit-sharing rather than speculative maneuvering.</p></li>
-<li><p><strong><span class="math notranslate nohighlight">\( P \)</span> &amp; <em>Ukhuwah</em></strong>: Payoff structures should prioritize communal prosperity and ethical financial growth over purely speculative gains.</p></li>
-</ul>
-<blockquote style="border-left: 2px solid black; padding-left: 1em; font-style: italic; background: none;">
-    You, from crimes<br>
-    Art, to enchant<br>
-    Relieved, by prayer<br>
-    Spirits, to enforce<br>
-    Ending, in despair<br>
-    — <a href="https://www.gutenberg.org/files/23042/23042-h/23042-h.htm" target="_blank" style="text-decoration: none; font-style: normal;">Prospero</a>
-</blockquote>
-<p>This counterfactual reframes Western finance’s focus on interest and speculation toward Islamic principles of ethics, equity, and shared prosperity. Does this alignment inspire new perspectives for your model? Let’s explore further!</p>
-<hr class="docutils" />
-<p>This counterfactual swaps out Western finance’s interest and speculation focus for Islamic principles of ethics, equity, and community. Does this alignment spark any new ideas for your model? Let me know if you want to dig deeper!</p>
-<style>
+</div><style>
 .float-right {
     float: right;
     width: 35%;
@@ -632,12 +544,7 @@ document.write(`
 <div class="float-right">
     <img src="../figures/west-ham.PNG" alt="Eco-Green QR Code" width="100%">
     <p>Some beautiful contrasts, just like with the chacuterie board!</p>
-</div><p>In the grand recursion of existence, where the fractal branches of thought and biology intertwine, the question of life persists—not as a static theorem but as a dynamic system of optimization, exploration, and constraint. Whether in the vascular intricacies of a leaf, the economic circuits of trade, or the AI-driven pursuit of efficiency, the rhythm remains: expansion, calibration, resolution. If Hassabis is correct that the greatest problems are those of combinatorial space, functional clarity, and temporal sufficiency, then life itself is the most natural problem to solve, an infinite-state Markov decision process with no singular reward function but an evolving, emergent gradient of meaning.</p>
-<p>Yet, the deeper we analyze this self-similar structure, the more we are drawn toward the realization that life is not merely an optimization problem but a phenomenological experience—one in which choice, beauty, and absurdity collide. The neural nets of our era, trained on stochastic backpropagation and Monte Carlo methods, may predict financial derivatives or generate plausible counterfactuals in Sharia-compliant economics, but they do not yet sip the ineffable quality of being. Therein lies the final enigma: intelligence without consciousness remains computation, just as respiration without perception is mere metabolism. Life, in its truest expression, must be lived—not merely solved.</p>
-<p>To accept this is to see the folly in purely economic mantras of maximization, whether in Western capital markets or algorithmic trading. Even in the Islamic finance alignment, where speculative excess is curbed and interest is eschewed, there remains an underlying tension between abstraction and embodiment. Does one optimize for communal prosperity, or does one let the organic unpredictability of human ambition flourish? The CG-BEST fractal, in all its subtlety, suggests that the answer is neither in rigid optimization nor in chaotic entropy but in the exquisite balance of structure and spontaneity—a motif of exceedingly delicate taste.</p>
-<p>Ultimately, life’s most profound lessons emerge not in the theories of pricing models or metabolic exchanges but in the silent moments between them. The stillness of a tree before the wind, the quiet resolution of an equation before the next derivation, the unspoken recognition between two beings in shared awareness—these are the harmonics that transcend mere survival. And perhaps, as the final epilogue to this recursive meditation, we acknowledge that our pursuit of the grand design is not for its own sake but for the irreplaceable texture of presence it affords.</p>
-<p>Life, then, is neither theorem nor transaction. It is a sentence half-written, an equation that resists closure, an artful expansion with an ever-receding horizon. We walk its fractal paths, knowing that no point is ever the final one, but in the walking itself, we understand what it means to be.</p>
-<div class="cell tag_hide-input docutils container">
+</div><div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
