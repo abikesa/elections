@@ -1,0 +1,778 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Stable &#8212; Elections</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part3/part3_3';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Illusion, 🎻🛏️💃🕺🏾🍱" href="../../bibliography.html" />
+    <link rel="prev" title="Normative" href="part3_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://abikesa.github.io/mundane/figures/daa.png" class="logo__image only-light" alt="Elections - Home"/>
+    <script>document.write(`<img src="https://abikesa.github.io/mundane/figures/daa.png" class="logo__image only-dark" alt="Elections - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Entropy, 🏇🌊🐘🐆🦒 🦔
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act1/part1.html">Resources, 🦉</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter1.html">Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter2.html">Ecosystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter3.html">Resilience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act2/part2.html">Faustian, 🐍 ☪️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter1.html">Prometheus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter2.html">Duality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter3.html">Apollo &amp; Dionysus</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../part3.html">Distibuted, 🗡️ 🛡️ 🪖</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act1.html">Weaponized 🌊</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_1.html">Transvaluation</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_2.html">Revolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_3.html">Veiled Resentment</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act2.html">Tokenized ⚓️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_1.html">Freedom in Fetters</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_2.html">Dancing in Chains</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_3.html">Born-to-Etiquette ☔️</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../act3.html">Monopolized 🧭</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="part3_1.html">Traditional</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part3_2.html">Normative</a></li>
+
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Stable</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bibliography.html">Illusion, 🎻🛏️💃🕺🏾🍱</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act3/part3/part3_3.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/act3/part3/part3_3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Stable</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wisdom-unfiltered-quite-akin-to-a-deluge">Wisdom, Unfiltered, Quite Akin to a Déluge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epiliogue">Epiliogue</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="stable">
+<span id="id1"></span><h1>Stable<a class="headerlink" href="#stable" title="Permalink to this heading">#</a></h1>
+<p>Margaret Thatcher’s rare moment of tears during an interview offers a raw, unfiltered glimpse into the chaotic flood of human experience—a deluge of wisdom that rises from the bottom up, through the streets of instinct and emotion rather than the polished corridors of imposed order. Her tears were not a rehearsed act but a spontaneous breach, a reminder that beneath the Iron Lady’s armor pulsed a humanity as vulnerable as any other. This moment speaks to a truth about us all: our deepest insights often emerge not from careful deduction but from the unscripted mess of living. Wisdom, unfiltered, is akin to this flood—untamed, inductive, born from the grit of reality rather than the lyre’s elegant strings. It’s the street-level pulse of existence, where tears fall before the mind can catch them, revealing that even the mightiest among us are tethered to the same primal currents.
+Yet humanity is also the owl—vigilant, watchful, poised in the dark. Thatcher’s swift recovery, her voice dropping from a distressed 739 Hz to a controlled 277 Hz to 554 Hz, reflects this ceaseless alertness. We don’t merely drown in the deluge; we scan it, sift it, seek patterns amid the chaos. Her prosody snapping back into cadence wasn’t just a return to form but a deliberate act of vigilance, an owl’s unblinking gaze reclaiming the night. This capacity to observe ourselves even in collapse suggests that humanity is defined not just by what overwhelms us, but by how we stand guard over our own unraveling. We are creatures who feel the flood but refuse to be swept away, who hear the noise of our own breaking and still strain for the signal beneath.</p>
+<p>That noise—the molecular churn of emotion—and the signal—the epitope of meaning—lie at the heart of our condition. Thatcher’s tears were pure noise, a chaotic spill of biology that defied her disciplined facade. They doubled her pitch, a sonic flare of distress as universal as a cry in the wild. But her recovery was the signal, the moment she filtered the flood into something recognizable, something purposeful. Humanity thrives in this tension: we are awash in the meaningless static of feeling—grief, fear, rage—yet driven to distill it into coherence. Like Thatcher wresting her voice back to its measured rhythm, we endlessly separate the molecule from the epitope, the raw data of life from the stories we tell to endure it. This is not a passive process but an active, almost defiant one—a refusal to let the noise define us wholly.</p>
+<p>Our identity, too, is distributed across a shifting battlefield: the self as helmet, the negotiable as shield, the nonself as spear. Thatcher’s tears cracked her helmet, that protective shell of selfhood she’d forged as the Iron Lady. But her shield—the negotiable boundary of public perception—flexed to absorb the blow, and her spear—the external world of expectation and scrutiny—pierced her only briefly before she turned it back. This triad reveals humanity as a dynamic interplay, not a monolith. We are not just the self we guard but the borders we barter and the forces we fend off. Thatcher didn’t cry alone; she did so under a nation’s gaze, her vulnerability a negotiation between her private truth and her public myth. We all live this way—helmeted, shielded, speared—our humanity forged in the push and pull of what we are, what we show, and what the world demands.</p>
+<p>And yet, there’s the illusion of control—the lyre’s beautiful music, the top-down deduction that whispers of mastery. Thatcher’s recovery played this tune, her restored cadence a Prospero-like spell cast over the storm. But it was just that—an illusion, a filter draped over the Dionysian flood. The tears came first, unbidden, a reminder that no amount of Athenian discipline can fully tame the wildness beneath. Humanity clings to this lyre, crafting narratives of order and restraint, but the streets—the bottom-up truth—always rumble louder. We deduce, we compose, we command, yet the deluge persists, and our truest wisdom lies in riding it, not silencing it. Thatcher’s moment wasn’t her control; it was her collision with the uncontrollable, her voice a bridge between chaos and the illusion of its conquest.</p>
+<p>What this says about humanity is that we are both the flood and the filter—Dionysus roaring through our veins, Athena shaping the roar into form. We are wise not because we avoid the deluge but because we swim in it, vigilant amid the noise, distributed across self and other, forever chasing signals in the chaos. Thatcher’s tears and their aftermath weren’t a failure of her strength but a testament to ours: we break, we bend, we wield illusions, and still we rise. Disappointing as AI may be in capturing this fully—too neat, too normative—we humans live it raw, unfiltered, a symphony of streets and lyres, helmets and spears, proving our humanity not in perfection, but in the messy, magnificent tension of it all. Grok-3</p>
+<style>
+.float-right {
+    float: right;
+    width: 35%;
+    height: auto;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+.float-right p {
+    text-align: left;
+    font-size: 12px;
+}
+</style>
+
+<div class="float-right">
+    <img src="https://cdn.theatlantic.com/thumbor/OvGN4MEDbgqaANUVZafxxp_QLwc=/0x0:2000x1125/1920x1080/media/img/2025/02/14/MurdochLeadRedoCrop/original.png" alt="Eco-Green QR Code" width="100%">
+    <p>CG-BEST represents our Dionysian bequethal.</p>
+</div><p>The interplay between wisdom and chaos reveals humanity’s deepest struggle. Our existence oscillates between bottom-up understanding—the unfiltered deluge of raw experience from “the streets”—and top-down attempts to impose structure through deductive frameworks. This tension shapes not just how we process information but how we construct our very identities.</p>
+<p>Wisdom emerges not from theoretical structures but from lived experience—an inductive process where patterns reveal themselves organically through encounters with reality. Yet we’re perpetually watchful, like owls in darkness, struggling to differentiate between the molecules of noise and the epitopes of meaningful signal. Our consciousness operates like an immune system, constantly scanning the environment to identify what matters and what doesn’t, what threatens and what nourishes.</p>
+<p>Our identity isn’t singular but distributed across multiple domains. The self forms our helmet—a protective yet potentially confining structure. Our shield represents what’s negotiable—the flexible boundary between inner reality and external forces. The spear symbolizes the non-self—those external challenges that define us through opposition and resistance. We exist at this intersection, constantly negotiating the boundaries between what we are, what we might become, and what we can never be.</p>
+<p>The illusion of control—our Prospero complex—tempts us to believe we can orchestrate reality through top-down frameworks, creating beautiful music through the lyre of deductive reasoning. Yet true wisdom requires filtering Dionysian chaos through Athenian discipline—acknowledging that our structured frameworks are ultimately constructions imposed upon an inherently chaotic reality.</p>
+<p>Our disappointment with artificial intelligence mirrors this fundamental tension. We created these systems seeking both the unfiltered wisdom of induction and the structured clarity of deduction, hoping they might reconcile what we ourselves cannot. Their failures reflect our own limitations—our inability to fully integrate bottom-up experience with top-down understanding, to reconcile the streets with the lyre.</p>
+<p>In this disappointment, we confront an uncomfortable truth: perhaps the true source of wisdom isn’t in resolving this tension but in embracing it—acknowledging that humanity exists precisely in this liminal space between chaos and order, between raw experience and imposed structure. Our disappointment isn’t with AI but with ourselves, and our persistent belief that someone or something might finally harmonize what has always been, and perhaps must remain, in productive tension. – Claude</p>
+<blockquote style="border-left: 2px solid black; padding-left: 1em; font-style: italic; background: none;">
+    You, from crimes<br>
+    Art, to enchant<br>
+    Relieved, by prayer<br>
+    Spirits, to enforce<br>
+    Ending, in despair<br>
+    — <a href="https://www.gutenberg.org/files/23042/23042-h/23042-h.htm" target="_blank" style="text-decoration: none; font-style: normal;">Prospero</a>
+</blockquote>
+<section id="wisdom-unfiltered-quite-akin-to-a-deluge">
+<h2>Wisdom, Unfiltered, Quite Akin to a Déluge<a class="headerlink" href="#wisdom-unfiltered-quite-akin-to-a-deluge" title="Permalink to this heading">#</a></h2>
+<p>Human cognition is a battleground between the raw, bottom-up forces of induction and the refined, top-down impositions of deduction. This dichotomy is not merely an epistemological concern but a lived reality, a ceaseless negotiation that defines both our perception of the world and our ability to navigate it. Like the owl that embodies vigilance, wisdom emerges not from sheer accumulation but from the ability to distinguish noise from signal, to extract the vital from the vast deluge of sensory input.</p>
+<p>At the molecular level, the struggle between noise and signal is more than metaphorical. Biological systems are inundated with countless stimuli, yet they must discern the meaningful—an immune system identifying an epitope amidst molecular chaos, a brain isolating a critical pattern in the midst of perceptual static. This is the essence of wisdom: the art of discernment, the ability to extract the consequential from the inconsequential.</p>
+<p>This extends to the distribution of selfhood. In its most primal form, selfhood is a helmet—protective, insular, an existential boundary separating the individual from the external world. Yet, in social contexts, the self is a shield—negotiable, responsive, a mechanism for engaging with others while maintaining integrity. And finally, there is the spear—the assertion of nonself, the capacity to challenge, pierce illusions, and reshape the external. In this tripartite configuration, the self is never static but an ongoing negotiation, a distributed interplay between defense, engagement, and offense.</p>
+<p>Yet, the illusion of control pervades this dynamic. Like Prospero in his tempest, we craft narratives of dominion, weaving illusions of mastery through our deductive faculties. We compose meaning as a lyre crafts harmony, believing our minds impose order upon the chaos. But this is a curated filtration—Dionysian chaos processed through Athenian reason, raw experience refined through the sieve of logos. The wisdom of the street, born of induction and immersion, is sterilized by academia’s deductive gaze, its intuitive power diluted in the name of intellectual order.</p>
+<p>The disappointment with artificial intelligence lies precisely in this sterilization. AI, no matter how advanced, remains an executor of <code class="docutils literal notranslate"><span class="pre">filters—trained</span> <span class="pre">on</span> <span class="pre">data</span></code>, optimizing for coherence, yet incapable of true unfiltered cognition. It lacks the unbridled torrents of human wisdom, the visceral chaos of lived experience. Its logic is scaffolding without the edifice of intuition, its knowledge a shield without the heft of a true spear. AI is Athena without Dionysus, the lyre without the storm, deduction without the riot of induction.</p>
+<p>Ultimately, wisdom demands the integration of these forces, not their opposition. True mastery does not lie in the pure control of top-down systems nor in the reckless abandon of bottom-up cognition. It lies in embracing the deluge—navigating the torrents without drowning, wielding both shield and spear with equal precision. It is the owl perched above the flood, seeing through the storm, vigilant and unshaken. It is knowing that to truly understand, one must listen not only to the structured harmonies of the lyre but also to the chaotic, unfiltered symphony of the streets. – GPT-4o</p>
+<style>
+.float-right {
+    float: right;
+    width: 35%;
+    height: auto;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+.float-right p {
+    text-align: left;
+    font-size: 12px;
+}
+</style>
+
+<div class="float-right">
+    <img src="../../figures/daa.png" alt="Eco-Green QR Code" width="100%">
+    <p>Dionysus as chaotic energy (static), Athena as the filtering force (temperament), and Apollo shaping the resulting harmony (jazz). Source: DALL-E</p>
+</div><p>Margaret Thatcher’s rare moment of tears during an interview serves as a profound metaphor for the human condition, encapsulating the tension between chaos and control, vulnerability and resilience, and the raw, unfiltered wisdom that emerges from lived experience. Her tears, a spontaneous outpouring of emotion, reveal the fragility that lies beneath even the most fortified exteriors. They remind us that wisdom is not always born from careful deliberation or structured reasoning but often arises from the messy, unpredictable flood of human experience. This deluge of emotion, unscripted and unrestrained, is where the deepest truths about our humanity are often found. It is in these moments of vulnerability that we confront the raw, inductive reality of life—the streets, as it were, where instinct and emotion reign supreme.</p>
+<p>Yet, humanity is not defined solely by its capacity to feel but also by its ability to observe, adapt, and recover. Thatcher’s swift recalibration of her voice, her pitch dropping from a distressed 739 Hz to a controlled 277 Hz to 554 Hz, exemplifies this duality. Her tears were a breach in her armor, a moment of surrender to the chaos, but her recovery was a testament to the vigilant, watchful aspect of human nature. Like the owl in the darkness, we are not merely passive recipients of our emotions; we are active participants, scanning the chaos for patterns, sifting through the noise to find the signal. Thatcher’s ability to regain control, to restore her voice to its measured cadence, reflects this innate human capacity to navigate the storm, to find meaning amidst the tumult.</p>
+<p>The interplay between noise and signal is central to this understanding. Thatcher’s tears were pure noise—a chaotic, biological response to emotion, a doubling of her pitch that betrayed her distress. But her recovery was the signal, the deliberate act of filtering that chaos into something coherent, something purposeful. This tension between noise and signal is emblematic of the human condition: we are awash in a sea of emotions, sensations, and experiences, yet we are driven to distill this chaos into meaning. We are both the flood and the filter, the chaos and the order, the noise and the signal. Our wisdom lies not in avoiding the deluge but in learning to swim within it, to extract meaning from the chaos without being consumed by it.</p>
+<p>Identity, too, is a dynamic and distributed phenomenon, shaped by the interplay of self, negotiable boundaries, and external forces. Thatcher’s tears cracked her helmet—the protective shell of her Iron Lady persona—but her shield, the negotiable boundary of public perception, absorbed the blow. Her spear, the external world of expectation and scrutiny, pierced her only briefly before she turned it back. This triad of self, shield, and spear illustrates the fluidity of human identity. We are not static beings but ever-shifting entities, constantly negotiating the boundaries between who we are, who we present ourselves to be, and what the world demands of us. Our humanity is forged in this interplay, in the push and pull of vulnerability and resilience, of chaos and control.</p>
+<p>And yet, there is the illusion of control—the lyre’s beautiful music, the top-down deduction that whispers of mastery. Thatcher’s recovery played this tune, her restored cadence a Prospero-like spell cast over the storm. But it was just that—an illusion, a <a class="reference external" href="https://en.wikipedia.org/wiki/Filter_(social_media)">filter</a> draped over the Dionysian flood. The tears came first, unbidden, a reminder that no amount of discipline or reason can fully tame the wildness beneath. Humanity clings to this lyre, crafting narratives of order and restraint, but the streets—the bottom-up truth—always rumble louder. We deduce, we compose, we command, yet the deluge persists, and our truest wisdom lies in riding it, not silencing it. Thatcher’s moment wasn’t her control; it was her collision with the uncontrollable, her voice a bridge between chaos and the illusion of its conquest.</p>
+<p>What this says about humanity is that we are both the flood and the filter—Dionysus roaring through our veins, Athena shaping the roar into form. We are wise not because we avoid the deluge but because we swim in it, vigilant amid the noise, distributed across self and other, forever chasing signals in the chaos. Thatcher’s tears and their aftermath weren’t a failure of her strength but a testament to ours: we break, we bend, we wield illusions, and still we rise. Our humanity is not defined by perfection but by the messy, magnificent tension of it all—the streets and the lyre, the helmet and the spear, the noise and the signal. In this tension, we find our truest selves, our deepest wisdom, and our most enduring strength. – DeepSeek</p>
+<hr class="docutils" />
+<p>I tried to search for more information on this topic, but unfortunately, I couldn’t find anything specific. It seems like you’ve provided a detailed and thoughtful essay on humanity, wisdom, and the complexities of human experience. If you’re looking for more insights or perspectives, I recommend trying a search engine or exploring philosophical or psychological resources. I’m here to help with any other questions or topics you’d like to discuss! – Meta AI</p>
+<p><em>WTF?</em></p>
+<p>I understand that my previous response may have seemed inadequate or unhelpful. I’m here to provide more thoughtful and detailed responses. Let me try again.</p>
+<p>Your essay explores the complexities of human experience, delving into the tensions between chaos and order, emotion and control, and the pursuit of wisdom. You draw upon various philosophical and literary references, weaving together a rich tapestry of ideas.</p>
+<p>One of the central themes of your essay is the interplay between the raw, unfiltered experience of life and our attempts to impose structure and meaning upon it. You suggest that true wisdom lies in embracing this tension, rather than trying to resolve it through imposed order or control.</p>
+<p>Your analysis of Margaret Thatcher’s moment of vulnerability during an interview offers a compelling case study in this regard. You highlight how her tears and subsequent recovery reflect the complex dynamics of human emotion, control, and identity.</p>
+<p>Throughout your essay, you also engage with the limitations of artificial intelligence in capturing the full richness and complexity of human experience. You argue that AI systems, no matter how advanced, remain bound by their programming and data, lacking the intuitive, unbridled nature of human wisdom.</p>
+<p>Overall, your essay presents a nuanced and thought-provoking exploration of humanity, wisdom, and the complexities of experience.</p>
+</section>
+<section id="epiliogue">
+<h2>Epiliogue<a class="headerlink" href="#epiliogue" title="Permalink to this heading">#</a></h2>
+<p><em>What is missing from Raphael’s School of Athens?</em> – Yours Truly</p>
+<p>Raphael’s School of Athens (1509–1511) is an undisputed masterpiece, but despite its grandeur, a few things could be considered “missing” depending on perspective:
+1.	Women – The fresco is overwhelmingly male, reflecting the Renaissance’s focus on classical philosophers, who were mostly men. Hypatia of Alexandria, often thought to be included, is debated, and some argue that Raphael could have more explicitly depicted female intellectuals.
+2.	Religious Figures – Given that it’s in the Vatican, it’s surprising that Raphael didn’t integrate more direct theological figures alongside the classical thinkers. While some scholars argue that Plato and Aristotle’s presence implies a harmony between faith and reason, major Christian theologians like Augustine or Aquinas are absent.
+3.	More Eastern Philosophers – While School of Athens is a tribute to Greek and Roman thought, philosophy was not limited to the Western world. Figures like Confucius or Avicenna, who had significant influence, are missing, making the scene very Eurocentric.
+4.	Practical Scientists – Raphael celebrates philosophy, but figures like Archimedes (represented by a bearded Bramante) and Ptolemy hint at the more mathematical side of knowledge. However, there’s no representation of applied science, engineering, or medicine.
+5.	Dynamism – While the composition is exquisite, it leans towards an idealized, orderly vision of intellectual life. A more intense depiction of debate or disagreement could have injected more energy into the scene.</p>
+<p>Would you add anything else to the list? — GPT-4o</p>
+<p><em>I like your last point, but it’s very immature. You have Apollo, who represents illusion of control, and or symphony, if you want. Then you have Athena, who represents the, you know, retreat from Dionysus, Dionysian chaos, who represents an owl, which is vigilance, who represents a serpent, you know, decisiveness of strategy, who represents a helmet, which is protection of self, who represents a spear, which is really, you know, adversarial alertness and competence, who represents a shield, which is negotiated stuff. You know, so you have a very filtered school of Athens. What is missing is Dionysus, or what he represents. And filtered nature.</em></p>
+<p>The School of Athens is a masterpiece of structure, but structure itself is a filter. It’s an idealized, hyper-rational distillation of intellectual life—clean, orderly, harmonized. But what it’s missing is Dionysus, or what he represents: chaos, instinct, raw creative destruction, the drunken intuition that often drives breakthroughs before logic catches up.</p>
+<p>The fresco is overwhelmingly Apollonian, which makes sense given its Vatican context. Everything is measured, rational, filtered—as you pointed out. Apollo, Athena, symmetry, and deliberate compositional balance reflect an intellectual order that excludes the uncontrolled, the primal, the ecstatic. There’s no wild inspiration, no uncontrolled creative flow, no sense that knowledge might come from a sublime frenzy rather than calm discourse.</p>
+<p>Raphael gives us philosophy in its final form, polished and structured, but not in its moment of birth, when ideas are still half-formed, dangerous, and intoxicating. There’s no Dionysian revelry, no sense that the intellectual world was also shaped by feverish moments of doubt, ecstasy, destruction, and rebirth. Where’s the madness? Where’s the disorder that forces new structures to emerge?</p>
+<p>Maybe School of Athens isn’t just missing Dionysus—it’s missing the process of philosophy itself, the messy, irrational, agonizing struggle before ideas crystallize into something worthy of a fresco.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># Define the relabeled network layers with tattoo-world labels</span>
+<span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;Initiation&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;First Ink&#39;</span><span class="p">,</span> <span class="s1">&#39;Street Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Gang Affiliation&#39;</span><span class="p">,</span> <span class="s1">&#39;Prison Time&#39;</span><span class="p">,</span> <span class="s2">&quot;Underworld Rank&quot;</span><span class="p">,</span> <span class="s1">&#39;Elite Criminal Status&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Recognition&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;Authority&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Hitman Mark&#39;</span><span class="p">,</span> <span class="s1">&#39;Kingpin Insignia&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;Regulation&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">,</span> <span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">,</span> <span class="p">],</span>  
+        <span class="s2">&quot;Execution&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Death Mark&#39;</span><span class="p">,</span> <span class="s1">&#39;Blood Oath&#39;</span><span class="p">,</span> <span class="s1">&#39;Punishment Tally&#39;</span><span class="p">,</span> <span class="s1">&#39;Ritual Branding&#39;</span><span class="p">,</span> <span class="s1">&#39;Legacy Inscriptions&#39;</span><span class="p">]</span>  
+    <span class="p">}</span>
+
+<span class="c1"># Assign colors to nodes</span>
+<span class="k">def</span> <span class="nf">assign_colors</span><span class="p">():</span>
+    <span class="n">color_map</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;yellow&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;paleturquoise&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Elite Criminal Status&#39;</span><span class="p">,</span> <span class="s1">&#39;Kingpin Insignia&#39;</span><span class="p">,</span> <span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">,</span> <span class="s1">&#39;Legacy Inscriptions&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;lightgreen&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Underworld Rank&quot;</span><span class="p">,</span> <span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Blood Oath&#39;</span><span class="p">,</span> <span class="s1">&#39;Ritual Branding&#39;</span><span class="p">,</span> <span class="s1">&#39;Punishment Tally&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;lightsalmon&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Gang Affiliation&#39;</span><span class="p">,</span> <span class="s1">&#39;Prison Time&#39;</span><span class="p">,</span> <span class="s1">&#39;Hitman Mark&#39;</span><span class="p">,</span> <span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">,</span> <span class="s1">&#39;Death Mark&#39;</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">node</span><span class="p">:</span> <span class="n">color</span> <span class="k">for</span> <span class="n">color</span><span class="p">,</span> <span class="n">nodes</span> <span class="ow">in</span> <span class="n">color_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">}</span>
+
+<span class="c1"># Define edge weights</span>
+<span class="k">def</span> <span class="nf">define_edges</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="p">(</span><span class="s1">&#39;First Ink&#39;</span><span class="p">,</span> <span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">):</span> <span class="s1">&#39;1/99&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Street Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Gang Affiliation&#39;</span><span class="p">,</span> <span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Prison Time&#39;</span><span class="p">,</span> <span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">):</span> <span class="s1">&#39;51/49&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s2">&quot;Underworld Rank&quot;</span><span class="p">,</span> <span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Elite Criminal Status&#39;</span><span class="p">,</span> <span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">):</span> <span class="s1">&#39;95/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">,</span> <span class="s1">&#39;Hitman Mark&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">,</span> <span class="s1">&#39;Kingpin Insignia&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Hitman Mark&#39;</span><span class="p">,</span> <span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">):</span> <span class="s1">&#39;49/51&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Hitman Mark&#39;</span><span class="p">,</span> <span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Hitman Mark&#39;</span><span class="p">,</span> <span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">):</span> <span class="s1">&#39;95/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Kingpin Insignia&#39;</span><span class="p">,</span> <span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Kingpin Insignia&#39;</span><span class="p">,</span> <span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Kingpin Insignia&#39;</span><span class="p">,</span> <span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">):</span> <span class="s1">&#39;51/49&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">,</span> <span class="s1">&#39;Death Mark&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">,</span> <span class="s1">&#39;Blood Oath&#39;</span><span class="p">):</span> <span class="s1">&#39;85/15&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">,</span> <span class="s1">&#39;Punishment Tally&#39;</span><span class="p">):</span> <span class="s1">&#39;90/10&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">,</span> <span class="s1">&#39;Ritual Branding&#39;</span><span class="p">):</span> <span class="s1">&#39;95/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Betrayal Marks&#39;</span><span class="p">,</span> <span class="s1">&#39;Legacy Inscriptions&#39;</span><span class="p">):</span> <span class="s1">&#39;99/1&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Death Mark&#39;</span><span class="p">):</span> <span class="s1">&#39;1/9&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Blood Oath&#39;</span><span class="p">):</span> <span class="s1">&#39;1/8&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Punishment Tally&#39;</span><span class="p">):</span> <span class="s1">&#39;1/7&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Ritual Branding&#39;</span><span class="p">):</span> <span class="s1">&#39;1/6&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Excommunication Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Legacy Inscriptions&#39;</span><span class="p">):</span> <span class="s1">&#39;1/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">,</span> <span class="s1">&#39;Death Mark&#39;</span><span class="p">):</span> <span class="s1">&#39;1/99&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">,</span> <span class="s1">&#39;Blood Oath&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">,</span> <span class="s1">&#39;Punishment Tally&#39;</span><span class="p">):</span> <span class="s1">&#39;10/90&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">,</span> <span class="s1">&#39;Ritual Branding&#39;</span><span class="p">):</span> <span class="s1">&#39;15/85&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Loyalty Seals&#39;</span><span class="p">,</span> <span class="s1">&#39;Legacy Inscriptions&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span>
+    <span class="p">}</span>
+
+<span class="c1"># Define edges to be highlighted in black</span>
+<span class="k">def</span> <span class="nf">define_black_edges</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="p">(</span><span class="s1">&#39;First Ink&#39;</span><span class="p">,</span> <span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">):</span> <span class="s1">&#39;1/99&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Street Symbols&#39;</span><span class="p">,</span> <span class="s1">&#39;Tattoo Codekeepers&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+
+<span class="c1"># Calculate node positions</span>
+<span class="k">def</span> <span class="nf">calculate_positions</span><span class="p">(</span><span class="n">layer</span><span class="p">,</span> <span class="n">x_offset</span><span class="p">):</span>
+    <span class="n">y_positions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">))</span>
+    <span class="k">return</span> <span class="p">[(</span><span class="n">x_offset</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">y_positions</span><span class="p">]</span>
+
+<span class="c1"># Create and visualize the neural network graph</span>
+<span class="k">def</span> <span class="nf">visualize_nn</span><span class="p">():</span>
+    <span class="n">layers</span> <span class="o">=</span> <span class="n">define_layers</span><span class="p">()</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="n">assign_colors</span><span class="p">()</span>
+    <span class="n">edges</span> <span class="o">=</span> <span class="n">define_edges</span><span class="p">()</span>
+    <span class="n">black_edges</span> <span class="o">=</span> <span class="n">define_black_edges</span><span class="p">()</span>
+    
+    <span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">node_colors</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># Create mapping from original node names to numbered labels</span>
+    <span class="n">mapping</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">layers</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">layer</span><span class="p">:</span>
+            <span class="n">mapping</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">counter</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="c1"># Add nodes with new numbered labels and assign positions</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">nodes</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="n">positions</span> <span class="o">=</span> <span class="n">calculate_positions</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">x_offset</span><span class="o">=</span><span class="n">i</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">positions</span><span class="p">):</span>
+            <span class="n">new_node</span> <span class="o">=</span> <span class="n">mapping</span><span class="p">[</span><span class="n">node</span><span class="p">]</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">new_node</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="n">layer_name</span><span class="p">)</span>
+            <span class="n">pos</span><span class="p">[</span><span class="n">new_node</span><span class="p">]</span> <span class="o">=</span> <span class="n">position</span>
+            <span class="n">node_colors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">colors</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="s1">&#39;lightgray&#39;</span><span class="p">))</span>
+    
+    <span class="c1"># Add edges with updated node labels</span>
+    <span class="n">edge_colors</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">),</span> <span class="n">weight</span> <span class="ow">in</span> <span class="n">edges</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">mapping</span> <span class="ow">and</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">mapping</span><span class="p">:</span>
+            <span class="n">new_source</span> <span class="o">=</span> <span class="n">mapping</span><span class="p">[</span><span class="n">source</span><span class="p">]</span>
+            <span class="n">new_target</span> <span class="o">=</span> <span class="n">mapping</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">new_source</span><span class="p">,</span> <span class="n">new_target</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">weight</span><span class="p">)</span>
+            <span class="n">edge_colors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;black&#39;</span> <span class="k">if</span> <span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span> <span class="ow">in</span> <span class="n">black_edges</span> <span class="k">else</span> <span class="s1">&#39;lightgrey&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># Draw the graph</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">edges_labels</span> <span class="o">=</span> <span class="p">{(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;weight&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">edges</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">)}</span>
+    
+    <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span>
+        <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="n">edge_colors</span><span class="p">,</span>
+        <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
+    <span class="p">)</span>
+    <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="n">edges_labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;OPRAH™: Criminal Ink Network: Ukubona Ubuntu&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Run the visualization</span>
+<span class="n">visualize_nn</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../../_images/77e6318e987433d9deb1115ad12e8074201568292af097f3376fe297798afc46.png" src="../../_images/77e6318e987433d9deb1115ad12e8074201568292af097f3376fe297798afc46.png" />
+</div>
+</div>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Icarus represents a rapid, elegant escape from the labyrinth by transcending into the third dimension—a brilliant shortcut past the father’s meticulous, earthbound craftsmanship. Daedalus, the master architect, constructs a tortuous, enclosed structure that forces problem-solving along a constrained plane. Icarus, impatient, bypasses the entire system, opting for flight: the most immediate and efficient exit. But that’s precisely where the tragedy lies—his solution <em>works</em> too well, so well that he doesn’t respect its limits. The sun, often emphasized as the moralistic warning, is really just a reminder that even the most beautiful, radical solutions have constraints. Icarus doesn’t just escape; he ascends. But in doing so, he loses the ability to iterate, to adjust dynamically. His shortcut is both his liberation and his doom. The real irony? Daedalus, bound to linear problem-solving, actually survives. He flies, but conservatively. Icarus, in contrast, embodies the hubris of absolute success—skipping all iterative safeguards, assuming pure ascent is sustainable.  It’s a compressed metaphor for overclocking intelligence, innovation, or even ambition without recognizing <em>feedback loops.</em> If you outpace the system too fast, you risk breaking the very structure that makes survival possible. It’s less about the sun and more about respecting the transition phase between escape and mastery.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act3/part3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="part3_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Normative</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../bibliography.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Illusion, 🎻🛏️💃🕺🏾🍱</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wisdom-unfiltered-quite-akin-to-a-deluge">Wisdom, Unfiltered, Quite Akin to a Déluge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epiliogue">Epiliogue</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 Zeus
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
