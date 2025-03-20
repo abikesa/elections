@@ -545,7 +545,60 @@ document.write(`
 <div class="float-right">
     <img src="https://abikesa.github.io/github/_images/antiquarian.jpeg" alt="Eco-Green QR Code" width="100%">
     <p>Karugire's Magnus Opus</p>
-</div><div class="cell tag_hide-input docutils container">
+</div><style>
+/* Wikipedia-style infobox */
+.wiki-frame {
+    float: right;
+    width: 35%;
+    margin-left: 15px;
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    font-family: sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.wiki-frame h3 {
+    background-color: #eaecf0;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #a2a9b1;
+    margin-top: 0;
+}
+
+.wiki-frame pre {
+    white-space: pre-wrap;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #a2a9b1;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+/* Make the frame responsive */
+@media (max-width: 768px) {
+    .wiki-frame {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+</style>
+
+<!-- Wikipedia-style Code Box -->
+<div class="wiki-frame">
+
+```{figure} https://www.ledr.com/colours/white.jpg
+---
+width: 1
+height: 1
+---
+_History_. It's a fractal unfolding of entropy and order, a ceaseless churn wherein civilization rise, on the back of extracted resources, but collapse under the weight of their own complexity, as the illusion of linear progress--the arrow of time merely inscribing the same motifs at different scales--invites us to witness the second law of thermodynamics in slow motion. We get to see empires, cities, cultures structured around an energetic peak before unraveling into diffusion. But lets not mistake entropy for chaos: its the necessary precondition for renewal!</div>
+<div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
