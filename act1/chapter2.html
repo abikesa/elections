@@ -578,7 +578,53 @@ document.write(`
 <p><span class="caption-number">Fig. 4 </span><span class="caption-text">Karugire’s Magnus Opus</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-</div><div class="cell tag_hide-input docutils container">
+</div>
+<style>
+/* Wikipedia-style infobox */
+.wiki-frame {
+    float: right;
+    width: 35%;
+    margin-left: 15px;
+    border: 1px solid #a2a9b1;
+    padding: 10px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    font-family: sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.wiki-frame h3 {
+    background-color: #eaecf0;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid #a2a9b1;
+    margin-top: 0;
+}
+
+.wiki-frame pre {
+    white-space: pre-wrap;
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid #a2a9b1;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+/* Make the frame responsive */
+@media (max-width: 768px) {
+    .wiki-frame {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+</style>
+
+<!-- Wikipedia-style Code Box -->
+<div class="wiki-frame"><div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell source</span>
@@ -728,11 +774,12 @@ document.write(`
 </div>
 </div>
 <figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
+<a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 5 </span><span class="caption-text"><em>Fact, Speculation, Narrative, Reason, History</em>. Oscar Wilde’s The Rise of Historical Criticism (1879) maps the evolution of Greek historical thought through a neural network lens. The “Tragedy” layer captures the initial Aufklärung, recognizing patterns in myth. “History” filters superstition, as Herodotus sifts fact from fable. “Epic” synthesizes this into rational narratives via Euhemeros and Thucydides. “Drama” pits belief against reason, refined by Plato and Aristotle. “Comedy” resolves it in Polybius’s scientific history. Wilde’s analysis mirrors a network’s progression from input to output, highlighting the enduring rationality of Greek critique.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
