@@ -445,28 +445,44 @@ document.write(`
     position: relative;
 }
 
-/* Bubble-style clickable link */
+/* Wikipedia-style file icon bubble */
 .image-bubble {
     position: absolute;
-    bottom: 8px;
-    right: 8px;
-    background: rgba(255, 255, 255, 0.8);
-    color: #333;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
+    bottom: 6px;
+    right: 6px;
+    width: 17px;
+    height: 17px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #aaa;
+    border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
     text-decoration: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
-.image-bubble:hover {
-    background: rgba(255, 255, 255, 1);
-    text-decoration: none;
+/* Simulated double-rectangle "screen" icon using CSS */
+.image-bubble::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 6px;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.image-bubble::after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 6px;
+    border: 1px solid #333;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: white;
 }
 </style>
 
@@ -474,14 +490,10 @@ document.write(`
     <a href="https://abikesa.github.io/uganda/_images/antiquarian.jpeg" target="_blank">
         <img src="https://abikesa.github.io/uganda/_images/antiquarian.jpeg" alt="Eco-Green QR Code" width="100%">
     </a>
-    <p>Uganda's postcolonial history is a fractal unfolding  of the aesthetic imperative vs. moral imposition: really a question of agency!
-    </p>
-    
-    <!-- Bubble-style clickable element -->
-    <a class="image-bubble" href="https://abikesa.github.io/uganda/_images/antiquarian.jpeg" target="_blank">🔍</a>
-</div>
+    <p>Uganda's postcolonial history is a fractal unfolding of the aesthetic imperative vs. moral imposition: really a question of agency!</p>
 
-<p>Because he is writing from a defensive posture—a postcolonial Ugandan scholar aware that <strong>European historiography equated myth with savagery</strong>. So he sterilizes the foundation. He begins not with water and wind, but with institutions. But what’s lost is the <strong>sensorimotor substrate of identity</strong>: the reflexive intelligence of place, of weather, of ancestry. His history floats above the earth, carefully avoiding the trembling core. That omission is not innocent. It’s strategic. But it’s a loss nonetheless.</p>
+    <a class="image-bubble" href="https://abikesa.github.io/uganda/_images/antiquarian.jpeg" target="_blank"></a>
+</div><p>Because he is writing from a defensive posture—a postcolonial Ugandan scholar aware that <strong>European historiography equated myth with savagery</strong>. So he sterilizes the foundation. He begins not with water and wind, but with institutions. But what’s lost is the <strong>sensorimotor substrate of identity</strong>: the reflexive intelligence of place, of weather, of ancestry. His history floats above the earth, carefully avoiding the trembling core. That omission is not innocent. It’s strategic. But it’s a loss nonetheless.</p>
 <hr class="docutils" />
 <p><strong>👁️ — Dorsal / Attention</strong><br />
 <strong>Mapped to Chapter 1: The Pre-Colonial Setting</strong></p>
