@@ -467,23 +467,26 @@ document.write(`
 .image-bubble::before {
     content: "";
     display: block;
-    width: 9px;
-    height: 6px;
+    width: 10px;  /* larger rectangle (background) */
+    height: 7px;
     border: 1px solid #333;
     position: relative;
+    z-index: 1;
 }
 
 .image-bubble::after {
     content: "";
     display: block;
-    width: 9px;
-    height: 6px;
+    width: 7px;  /* smaller rectangle (foreground) */
+    height: 5px;
     border: 1px solid #333;
     position: absolute;
     top: 2px;
     left: 2px;
     background: white;
+    z-index: 2;
 }
+
 </style>
 
 <div class="float-right">
